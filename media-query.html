@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+      [class*="window-"] {
+      border-color: red;
+      border-width: 10px;
+      border-style: dashed;
+      }
+      h1 {
+      color: yellow;
+      }
+      .menu { color: white;
+      font-size: 40px;
+      word-spacing: 10px;
+      }
+      li {display: inline;
+      margin-left: 150px;
+      }
+      @media only screen and (min-width: 500px) {
+      li {
+      display: block;
+      margin-left: 5px;
+      text-decoration: underline;
+      }
+      .window-1 {width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+      }
+      .window-3 {width: 40%%;
+      margin-left: 30%;
+      margin-right: 30%;}
+      }
+      body {
+      background-color: black;
+      outline-width: 25px;
+      outline-color: green;
+      outline-style: solid;
+      height: 100%;
+      }
+      @media only screen and (min-width: 1000px) {
+      li {
+      margin-left: 70px;
+      display: inline;
+      }
+      .window-1 {width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;}
+      .window-3 {width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;}
+      body {
+      background-color: green;
+      outline-width: 25px;
+      outline-color: black;
+      outline-style: solid;
+      height: 100%;
+      }
+      }
+      @media only screen and (min-width: 1500px) {
+      li {
+      margin-left: 200px;
+      border-width: 10px;
+      border-color: black;
+      border-style: solid;
+      }
+      .window-1 {width: 100%;
+      }
+      .window-3 {width: 80%;
+      }
+      body {background-color: white;
+      outline-width: 25px;
+      outline-color: red;
+      outline-style: solid;
+      height: 100%;
+      }
+      }
+   </style>
+   <body>
+      <nav class="menu">
+         <ul>
+            <li style="color:orange">tab 1</font></li>
+            <li style="color:blue">tab 2</li>
+            <li style="color:pink">tab 3</li>
+            <li style="color:purple">tab 4</li>
+         </ul>
+      </nav>
+      <div class="window-3">
+         <h1>Awesome!</h1>
+      </div>
+      <h1 class="window-1">Things are changing!</h1>
+   </body>
+</html>
